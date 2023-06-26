@@ -1,10 +1,100 @@
 @use "functions"as m;
 
 /*---------- header ----------*/
-header{
-    img{
+header {
+    img {
         width: 100%;
     }
 }
 
-/*---------- sec1 ----------*/
+/*---------- body ----------*/
+
+/*---------- sec 1  ----------*/
+#sec1-1,
+#sec2-1,
+#sec3-1,
+#sec4-1,
+#sec5-1{
+    width: 100%;
+}
+
+#sec1-2,
+#sec2-2,
+#sec2-4,
+#sec3-2,
+#sec3-4,
+#sec4-2,
+#sec5-2,
+#sec5-3,
+#sec5-5,
+#sec5-8 {
+    display: block;
+    margin: 0 auto;
+}
+
+#sec1-3,
+#sec1-4,
+#sec1-5,
+#sec1-6,
+#sec2-3,
+#sec3-3,
+#sec4-3,
+#sec5-4  {
+    display: block;
+    width: 70%;
+    margin: 60px auto;
+    text-align: center;
+}
+
+#sec4-4,
+#sec4-5,
+#sec4-6,
+#sec5-9,
+#sec5-10,
+#sec5-11,
+#sec5-12 {
+    display: block;
+    width: 55%;
+    margin: 60px auto;
+    text-align: center;
+}
+
+#sec2-5,
+#sec2-6,
+#sec3-5,
+#sec3-6{
+    width: 35%;
+}
+.illust {
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.schedule {
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 70px auto;
+    img {
+        width: 50%;
+        padding: 30px;
+    }
+}
+
+
+
+div {
+    width: 60%;
+    margin: 20px auto;
+
+    p {
+        text-align: left;
+    }
+}
+
+/*---------- sec 2  ----------*/
+#sec2-1,
+#sec6-1,
+#footer {
+    width: 100%;
+}
