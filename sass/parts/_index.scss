@@ -1,4 +1,4 @@
-@use "functions"as m;
+@use "functions" as m;
 
 /*---------- header ----------*/
 header {
@@ -19,15 +19,18 @@ header {
 #sec2-1,
 #sec3-1,
 #sec4-1,
-#sec5-1{
+#sec5-1,
+#min-sec1-1,
+#min-sec2-1,
+#min-sec3-1,
+#min-sec4-1,
+#min-sec5-1{
     width: 100%;
 }
 
 #sec1-2,
 #sec2-2,
-
 #sec3-2,
-
 #sec4-2,
 #sec5-2,
 #sec5-3,
@@ -37,12 +40,29 @@ header {
     margin: 20px auto;
     max-width: 450px;
 }
+#min-sec1-2,
+#min-sec2-2,
+#min-sec3-2,
+#min-sec4-2,
+#min-sec5-2,
+#min-sec5-3,
+#min-sec5-5,
+#min-sec5-8 {
+    display: block;
+    margin: 10px auto;
+    min-width: 120px;
+}
+
 #sec2-4,
 #sec3-4{
     display: block;
     margin: 0 auto;
     max-width: 350px;
-
+}
+#min-sec2-4,
+#min-sec3-4{
+    display: block;
+    margin: 0 auto;
 }
 
 #sec1-3,
@@ -58,6 +78,19 @@ header {
     margin: 60px auto;
     text-align: center;
 }
+#min-sec1-3,
+#min-sec1-4,
+#min-sec1-5,
+#min-sec1-6,
+#min-sec2-3,
+#min-sec3-3,
+#min-sec4-3,
+#min-sec5-4  {
+    display: block;
+    width: 90%;
+    margin: 30px auto;
+    text-align: center;
+}
 
 #sec4-4,
 #sec4-5,
@@ -71,6 +104,23 @@ header {
     margin: 60px auto;
     text-align: center;
 }
+#min-sec4-4,
+#min-sec4-5,
+#min-sec4-6 {
+    display: block;
+    width: 80%;
+    margin: 60px auto;
+    text-align: center;
+}
+#min-sec5-9,
+#min-sec5-10,
+#min-sec5-11,
+#min-sec5-12 {
+    display: block;
+    width: 90%;
+    margin: 30px auto;
+    text-align: center;
+}
 
 #sec2-5,
 #sec2-6,
@@ -78,10 +128,22 @@ header {
 #sec3-6{
     width: 35%;
 }
+#min-sec2-5,
+#min-sec2-6,
+#min-sec3-5,
+#min-sec3-6{
+    width: 80%;
+    display: block;
+    margin: 10px auto;
+}
 .illust {
     width: 80%;
     display: flex;
     justify-content: space-evenly;
+    @include m.spc {
+        display: block;
+        width: 90%;
+    }
 }
 .schedule {
     width: 80%;
@@ -91,6 +153,15 @@ header {
     img {
         width: 50%;
         padding: 30px;
+        margin: 20px auto;
+    }
+    @include m.spc {
+        display: block;
+        width: 90%;
+        img {
+            width: 100%;
+            padding: 5px;
+        }
     }
 }
 
@@ -111,6 +182,12 @@ div {
 #footer {
     width: 100%;
 }
+#min-sec2-1,
+#min-sec6-1,
+#min-footer {
+    width: 100%;
+}
+
 .btn {
 	position: relative;
 	max-width: 380px;
@@ -136,4 +213,14 @@ div {
     -webkit-transform: translate(-50%, -50%) scale(1.15) !important;
       transform: translate(-50%, -50%) scale(1.15) !important;
     opacity: 0;
-  }
+}
+
+ /* パソコンで見たときは"pc"のclassがついた画像が表示される */
+.pc { display: block !important; }
+.sp { display: none !important; }
+
+/* スマートフォンで見たときは"sp"のclassがついた画像が表示される */
+@media only screen and (max-width: 430px) {
+    .pc { display: none !important; }
+    .sp { display: block !important; }
+}
