@@ -9,8 +9,7 @@ $tab: 834px;
         @content;
     }
 }
-
-$spc: 430px;
+$spc: 520px;
 
 @mixin spc {
     @media (max-width: ($spc)) {

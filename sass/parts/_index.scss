@@ -170,9 +170,14 @@ header {
 div {
     width: 60%;
     margin: 20px auto;
-
+    @include m.spc {
+        width: 85%;
+    }
     p {
         text-align: left;
+        @include m.spc {
+            font-size: 12px;
+        }
     }
 }
 
