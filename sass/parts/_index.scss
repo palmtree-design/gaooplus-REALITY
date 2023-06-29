@@ -41,16 +41,28 @@ header {
     max-width: 450px;
 }
 #min-sec1-2,
-#min-sec2-2,
-#min-sec3-2,
+
 #min-sec4-2,
-#min-sec5-2,
+
 #min-sec5-3,
-#min-sec5-5,
+
 #min-sec5-8 {
     display: block;
     margin: 10px auto;
-    min-width: 120px;
+    max-width: 35%;
+}
+#min-sec2-2,
+#min-sec3-2,
+#min-sec5-2{
+    display: block;
+    margin: 10px auto;
+    max-width: 70%;
+}
+#min-sec5-3,
+#min-sec5-5 {
+    display: block;
+    margin: 10px auto;
+    max-width: 55%;
 }
 
 #sec2-4,
@@ -63,6 +75,7 @@ header {
 #min-sec3-4{
     display: block;
     margin: 0 auto;
+    max-width: 35%;
 }
 
 #sec1-3,
