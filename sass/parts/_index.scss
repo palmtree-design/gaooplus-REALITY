@@ -104,11 +104,7 @@ header {
 
 #sec4-4,
 #sec4-5,
-#sec4-6,
-#sec5-9,
-#sec5-10,
-#sec5-11,
-#sec5-12 {
+#sec4-6 {
     display: block;
     width: 55%;
     margin: 60px auto;
@@ -122,13 +118,22 @@ header {
     margin: 60px auto;
     text-align: center;
 }
+#sec5-9,
+#sec5-10,
+#sec5-11,
+#sec5-12 {
+    display: block;
+    width: 55%;
+    margin: 60px auto 20px;
+    text-align: center;
+}
 #min-sec5-9,
 #min-sec5-10,
 #min-sec5-11,
 #min-sec5-12 {
     display: block;
     width: 90%;
-    margin: 30px auto;
+    margin: 30px auto 1px;
     text-align: center;
 }
 
@@ -159,15 +164,16 @@ header {
     width: 80%;
     display: flex;
     justify-content: space-evenly;
-    margin: 70px auto;
+    margin: 40px auto ;
     img {
         width: 50%;
-        padding: 30px;
-        margin: 20px auto;
+        padding: 20px;
+        margin: 0px auto;
     }
     @include m.spc {
         display: block;
         width: 90%;
+        margin: 30px auto;
         img {
             width: 100%;
             padding: 5px;
