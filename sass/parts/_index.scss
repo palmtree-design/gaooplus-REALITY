@@ -17,12 +17,10 @@ header {
 
 #sec1-1,
 #sec2-1,
-#sec3-1,
 #sec4-1,
 #sec5-1,
 #min-sec1-1,
 #min-sec2-1,
-#min-sec3-1,
 #min-sec4-1,
 #min-sec5-1{
     width: 100%;
@@ -30,7 +28,6 @@ header {
 
 #sec1-2,
 #sec2-2,
-#sec3-2,
 #sec4-2,
 #sec5-2,
 #sec5-3,
@@ -49,7 +46,6 @@ header {
     max-width: 35%;
 }
 #min-sec2-2,
-#min-sec3-2,
 #min-sec5-2{
     display: block;
     margin: 10px auto;
@@ -62,14 +58,12 @@ header {
     max-width: 55%;
 }
 
-/*-- #sec2-4, --*/
-#sec3-4{
+#sec2-4{
     display: block;
     margin: 0 auto;
     max-width: 350px;
 }
-/*-- #min-sec2-4, --*/
-#min-sec3-4{
+#min-sec2-4{
     display: block;
     margin: 0 auto;
     max-width: 35%;
@@ -80,7 +74,6 @@ header {
 #sec1-5,
 #sec1-6,
 #sec2-3,
-#sec3-3,
 #sec4-3,
 #sec5-4  {
     display: block;
@@ -93,7 +86,6 @@ header {
 #min-sec1-5,
 #min-sec1-6,
 #min-sec2-3,
-#min-sec3-3,
 #min-sec4-3,
 #min-sec5-4  {
     display: block;
@@ -137,16 +129,8 @@ header {
     text-align: center;
 }
 
-/*-- #sec2-5,
-#sec2-6, --*/
-#sec3-5,
-#sec3-6{
-    width: 35%;
-}
-/*-- #min-sec2-5,
-#min-sec2-6, --*/
-#min-sec3-5,
-#min-sec3-6{
+#min-sec2-5,
+#min-sec2-6{
     width: 80%;
     display: block;
     margin: 10px auto;
@@ -155,9 +139,14 @@ header {
     width: 80%;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     @include m.spc {
         display: block;
         width: 90%;
+    }
+    img{
+        width: auto;
+        max-height: 500px;
     }
 }
 .schedule {
