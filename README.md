@@ -1,2 +1,0 @@
-# gaooplus-REALITY
-gaooplus

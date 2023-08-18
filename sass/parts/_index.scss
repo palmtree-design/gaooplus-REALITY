@@ -27,15 +27,25 @@ header {
 }
 
 #sec1-2,
-#sec2-2,
 #sec4-2,
-#sec5-2,
 #sec5-3,
 #sec5-5,
 #sec5-8 {
     display: block;
     margin: 20px auto;
     max-width: 450px;
+    @include m.tab {
+        width: 40%;
+    }
+}
+#sec2-2,
+#sec5-2{
+    display: block;
+    margin: 20px auto;
+    max-width: 550px;
+    @include m.tab {
+        width: 60%;
+    }
 }
 #min-sec1-2,
 #min-sec4-2,
@@ -46,7 +56,7 @@ header {
     max-width: 35%;
 }
 #min-sec2-2,
-#min-sec5-2{
+#min-sec5-2 {
     display: block;
     margin: 10px auto;
     max-width: 70%;
@@ -131,22 +141,30 @@ header {
 
 #min-sec2-5,
 #min-sec2-6{
-    width: 80%;
+/*     width: 80%; */
     display: block;
     margin: 10px auto;
 }
 .illust {
     width: 80%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
     @include m.spc {
-        display: block;
-        width: 90%;
+        flex-direction: column;
+        width: 95%;
     }
     img{
         width: auto;
-        max-height: 500px;
+        max-height: 480px;
+        margin-bottom: 50px;
+        @include m.tab {
+            max-height: 390px;
+        }
+        @include m.spc {
+            max-height: 420px;
+        }
     }
 }
 .schedule {
@@ -234,13 +252,3 @@ div {
     .pc { display: none !important; }
     .sp { display: block !important; }
 }
-
-
-// #sec2-4,
-// #sec2-5,
-// #sec2-6,
-// #min-sec2-4,
-// #min-sec2-5,
-// #min-sec2-6 {
-//     display: none;
-// }
